@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow-x: visible !important;
+}
+p{
+    font-size: 40px;
+    font-weight: 30px;
+    text-align: center;
+    color: #F53838;
+}
+
+button>svg path {
+    fill: #F53838;
+}
+.mr-a{
+   float: right;
+}
+
+.slick-slide {
+    overflow-x: scroll;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.preview {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border: 2px solid #F53838;
+    border-radius: 50%;
+}
+
+.preview:hover {
+    background-color: #F53838;
+}
+
+.preview:hover>svg path {
+    fill: #fff;
+}
+
+.slick-dots li button:before {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    content: '' !important;
+    text-align: center;
+    opacity: .25;
+    background-color: #DDE0E4;
+    transition: all 600ms linear;
+}
+
+.slick-dots li {
+    margin: 0 15px !important;
+    /* transition: all 2s linear; */
+}
+
+.slick-dots li.slick-active button:before {
+    width: 45px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #F53838;
+}
+
+.slick-list {
+    overflow: visible !important;
+    position: relative;
+    z-index: -1;
+}
+
+.slick-list::after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 4000px;
+    right: 100%;
+    background-color: white;
+}
